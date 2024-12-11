@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Sen", sans-serif;
+    font-family:  Arial, Helvetica, sans-serif;
 }
 ul{
     list-style: none;
@@ -25,10 +25,11 @@ ul{
     background-color: beige;
    
 }
+
+/*=========================================header_wrap*/
 .header_wrap{
     width: 1100px;
     height: 120px;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -36,22 +37,18 @@ ul{
     margin: 0 auto;
 }
 .header_wrap .logo{
-    background-color: aqua;
     display: flex;
     width: 10%;
     flex-basis: 100%;
     align-items: center;
-    justify-content: center;
-
     
 }
 .header_sign_wrap{
     display: flex;
-    width: 90%;
+    width: 87%;
     height: 60px;
     flex-wrap: wrap;
     justify-content:end;
-    background-color:azure ;
 }
 .header_sign_wrap ul{
     display: flex;
@@ -75,7 +72,7 @@ ul{
     width: 34px;
     height: 34px;
     border: 1px solid #555;
-    border-radius: 1px;
+    border-radius: 5px;
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
 }
@@ -86,7 +83,6 @@ ul{
 .nav_wrap{
     width: 90%;
     height: 60px;
-    background-color: blue;
 }
 .nav_wrap ul{
     
@@ -95,9 +91,114 @@ ul{
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-    gap:2em;
+    gap:2.5em;
 }
 .main_menu a{
     color:#333;
     font-size: 13px;
+}
+
+/*=========================================main_visual*/
+.main_visual{
+    width: 100%;
+    height: 32vw;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_december_top_bg.jpg)
+                no-repeat center;
+    background-size: cover;
+}
+.main_visual_slogan{
+    position: absolute;
+    width: 17.9%;
+    left: 14.3%;
+    top:36.7%;
+   
+}
+.main_visual_slogan img{
+    max-width: 100%;
+}
+.slogan_btn{
+    position: absolute;
+    width: 8%;
+    height: 2.5vw;
+    top: 60%;
+    left: 20%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 2.5vw;
+    font-size: 15px;
+    font-weight: 600;
+}
+.slogan_btn a{
+    max-width: 100%;
+    display: inline-block;
+    color: #fff;
+    
+}
+.main_visual{
+    position: relative;
+}
+.set_01{
+    position: absolute;
+    z-index: 9;
+    top:13%;
+    left: 35%;
+    width: 12%;
+   
+}
+.set_01 img{
+    max-width: 100%;
+}
+.set_02{
+    position: absolute;
+    z-index: 8;
+    top: 22%;
+    left: 63%;
+    width: 12%;
+   
+    
+}
+.set_02 img{
+    max-width: 100%;
+}
+.set_03{
+    position: absolute;
+    z-index: 7;
+    top: 34%;
+    left: 51%;
+    width: 14%;
+   
+}
+.set_03 img{
+    max-width: 100%;
+}
+.set_04{
+    position: absolute;
+    z-index: 6;
+    top: 28%;
+    left: 43%;
+    width: 12%;
+   
+}
+.set_04 img{
+    max-width: 100%;
+}
+.set_05{
+    position: absolute;
+    z-index: 5;
+    top: 15%;
+    left: 71.5%;
+    width: 11.6%;
+   
+}
+
+.set_05 img{
+    max-width: 100%;
+}
+.pop_cont01{
+    
+    position: fixed;
+    right: 7%;
+    top: 15%;
+    z-index: 10;
 }

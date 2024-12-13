@@ -32,6 +32,17 @@ ul{
 
 /*=========================================header_wrap*/
 .header_wrap{
+    background: #f6f5ef;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 2px solid #000;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 111;
+}
+
+.header_sub{
     width: 1100px;
     height: 120px;
     display: flex;
@@ -40,6 +51,7 @@ ul{
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .header_wrap .logo{
     display: flex;
     width: 10%;
@@ -102,7 +114,10 @@ ul{
     font-size: 13px;
 }
 
-/*=========================================main_visual*/
+/*=========================================section_main*/
+.section_main{
+    margin-top: 143px;
+}
 .main_visual{
     width: 100%;
     height: 32vw;
@@ -273,8 +288,6 @@ ul{
     height: 563px;
     /* background-color: blueviolet; */
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 .pan{
     width: 500%;
@@ -299,15 +312,15 @@ ul{
 }
 
 .pan .slogan_btn{
-    position: absolute;
-    width: 2.5%;
-    height: 2.5vw;
-    top: 90%;
-    left: 21.5%;
+    position: relative;
+    width: 16.5%;
+    height: 2.3vw;
+    top: -6.5%;
+    left: 43.5%;
     border: 2px solid #222;
     border-radius: 3px;
     text-align: center;
-    line-height: 2.3vw;
+    line-height: 2.1vw;
     font-size: 14px;
     font-weight: 300;
 }
@@ -320,30 +333,32 @@ ul{
     
 }
 .prev{
+    height: 55px;
+    width: 55px;
     position: relative;
-    height: 50px;
-    width: 50px;
     border: 2px solid #333;
     border-radius: 50%;
-    top: -305px;
+    top: -100%;
     z-index: 12;
    
 }
 .next{
     position: relative;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     border: 2px solid #333;
     border-radius: 50%;
-    top: -358px;
-    left: 1050px;
+    top: -110%;
+    left: 1046px;
     z-index: 12;
 }
 .prev img, .next img{
-    margin: 10px;
+    margin-left: 15px;
+    margin-top: 13px;
 }
+
 .section_notice_slide{
-    height: 40vw;
+    height: 620px;
     overflow: hidden;
 }
 .main_slide_controller{
@@ -358,12 +373,202 @@ ul{
 .new-rewards_wrap{
     width: 100%;
     background-color: #1e3932;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 .new-rewards_inner{
     width: 1100px;
     margin: 0 auto;
     display: flex;
+    flex-direction: row;
+}
+.rewards_logo{
+    width: 22.5%;
+    padding-top: 22px;
+}
+.rewards_logo img{
+    max-width: 71%;
+}
+.new-rewards_conts{
+    width: 77.5%;
+    display: flex;
     flex-direction: column;
+}
+.info-cont{
+    display: flex;
+    max-width: 100%;
+    flex-basis: 50%;
+    border-bottom: 1px solid white;
+    
+}
+.info-cont_txt{
+    width: 75%;
+    color:#fff
+}
+.btn-signin_group{
+    width: 25%;
+    margin-top: 63px;
+}
+.btn-signin_join{
+    background-color: #00704a;
+    border: 2px solid #00704a;
+}
+
+.btn-signin_group a{
+    display: inline-block;
+    height: 38px;
+    line-height: 36px;
+    padding-left: 21.4px;
+    padding-right: 21.4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-signin_login{
+    margin-left: 9px;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.info-cont_txt h2{
+    font-size: 26px;
+}
+.info-cont_txt p{
+    margin-top: 23px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    
+}
+.gift-cont{
+    display: flex;
+    max-width: 100%;
+    flex-basis: 50%;
+    margin-top: 13px;
+}
+.gift-cont_txt{
+    width: 75%;
+    font-size: 14px;
+    color:#fff;
+}
+.btn_egift{
+    width: 25%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    line-height: 38px;
+    margin-top: 0px;
+}
+.btn_egift a{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-bean_wrap {
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_november_promotion_bg.jpg) center / cover no-repeat;
+    height: 578px;
+    position: relative;
+}
+.main-bean_inner{
+        position: relative;
+        max-width: 1080px;
+        height: 100%;
+        margin: 0 auto;
+    
+}
+.bean_img_box {
+    position: absolute;
+    z-index: 21;
+    top: 17.26%;
+    left: 20%;
+
+}
+.bean_img_box img {
+    width: 77%;
+} 
+.bean_txt_box {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% + 3px);
+    right: 5.4%;
+    transform: translateY(-50%);
+    width: calc(33% + 1px);
+    right: 16.6%;
+}
+.bean_txt_box img {
+    vertical-align: top;
+    max-width: 100%;
+}
+.btn_bean_detail {
+    width: 125px;
+    height: 38px;
+    margin-top: 40px;
+}
+.btn_bean_detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+}
+/*========================================================== reserve_warp*/
+.reserve_warp{
+    position: relative;
+    height: 400px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/241022_pc_reserve_bg_1.jpg) no-repeat center top;
+    background-size: 100% 400px;
+    /* overflow: hidden; */
+}
+.reserve_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.reserve_title img{
+    width: auto;
+    transform: translateX(310px);
+    margin-top: 72px;
+    
+}
+.reserve_visual{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.reserve_visual img{
+    position: absolute;
+    width: auto;
+    left: -105px;
+}
+.reserve_visual .reserve_visual-mb{
+    width: auto;
+}
+.btn_reserve_detail {
+    position: absolute;
+    width: 125px;
+    height: 38px;
+    margin-top: 40px;
+    top: 250px;
+    left: 544px;
+}
+.btn_reserve_detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #c2883f;
+    border: 2px solid #c2883f;;
    
-    background-color: rgb(246, 189, 253);
 }

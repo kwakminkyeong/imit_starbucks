@@ -107,11 +107,11 @@ ul{
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-    gap:2.5em;
+    gap:3.1em;
 }
 .main_menu a{
     color:#333;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /*=========================================section_main*/
@@ -519,13 +519,13 @@ ul{
     color: #fff;
     border: 2px solid #fff;
 }
-/*========================================================== reserve_warp*/
-.reserve_warp{
+/*========================================================== reserve_wrap*/
+.reserve_wrap{
     position: relative;
     height: 400px;
     background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/241022_pc_reserve_bg_1.jpg) no-repeat center top;
     background-size: 100% 400px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .reserve_inner{
     position: absolute;
@@ -540,14 +540,33 @@ ul{
     
 }
 .reserve_visual{
-    width: 100%;
+    max-width: none;
     height: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 .reserve_visual img{
     position: absolute;
     width: auto;
-    left: -105px;
+    left: -257px;
+}
+.reserve_visual-pc::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 400px;
+    background-size: cover;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/241022_pc_reserve_bg_left.png);
+
+    
+}
+.reserve_visual-pc::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 400px;
+    background-size: cover;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/241022_pc_reserve_bg_right.png);
 }
 .reserve_visual .reserve_visual-mb{
     width: auto;
@@ -571,4 +590,192 @@ ul{
     color: #c2883f;
     border: 2px solid #c2883f;;
    
+}
+/*========================================================== favo_wrap*/
+.favo_wrap{
+    height: 812px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_december_pick_bg.jpg) center center fixed no-repeat #45434c;
+    background-size: auto 89%;
+    padding: 0;
+    position: relative;
+    background-position: bottom;
+}
+.favo_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.favo_title{
+    height: 205px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_december_pick_txt01.png) no-repeat;
+    margin-left: 387px;
+    margin-top: 149px;
+
+}
+.favo_text01{
+    height: 205px;
+    background: url(	https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_december_pick_txt02.png) no-repeat ;
+    margin-left: 288px;
+    margin-top: 47px;   
+}
+.favo_title img{
+    width: auto;
+    transform: translateX(310px);
+    margin-top: 72px;
+    
+}
+.favo_visual{
+    max-width: none;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.favo_img{
+    position: absolute;
+    top: 71px;
+    right: -1px;
+    width: 944px;
+    height: 608px;
+    background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_december_pick_img.png);
+}
+.btn_favo_detail {
+    position: absolute;
+    width: 125px;
+    height: 38px;
+       top: 580px;
+       left: 515px;
+   
+}
+.btn_favo_detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;;
+}
+
+/*========================================================== magazin_wrap*/
+
+.magazine_wrap{
+    /* overflow: hidden; */
+    position: relative;
+    height: 400px;
+    top:0px;
+    background: url(https://image.istarbucks.co.kr/upload/common/img/main/2021/reserve_bg_pc.png) no-repeat 50% 100%;
+    background-size: auto 353px;
+
+}
+.magazin_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.magazine_title{
+    position: absolute;
+    top:153px;
+    left: 370px;
+}
+.magazine_img{
+    width: auto;
+    position: absolute;
+    top: -1px;
+    right: 370px;
+}
+
+.btn_magazine_detail {
+    position: absolute;
+    width: 125px;
+    height: 38px;
+    top: 290px;
+    left: 587px;
+   
+}
+.btn_magazine_detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #111;
+    border: 2px solid #111;;
+}
+
+/*========================================================== store_wrap*/
+
+.store_wrap{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    top:0px;
+    background: url(https://www.starbucks.co.kr/common/img/main/store_bg.jpg) no-repeat center;
+    background-size: cover;
+
+}
+.store_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.store_title{
+    position: absolute;
+    top: 106px;
+    right: 343px;
+}
+.store_text{
+    position: absolute;
+    top: 173px;
+    right: 343px;
+}
+.store_img01{
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 370px;
+}
+.store_img02{
+    width: auto;
+    position: absolute;
+    top: 132px;
+    left: 630px;
+}
+.store_img03{
+    width: auto;
+    position: absolute;
+    top: -57px;
+    left: 706px;
+}
+
+.store_img04{
+    width: auto;
+    position: absolute;
+    top: 302px;
+    right: 180px;
+}
+.btn_store_detail {
+    position: absolute;
+    width: 125px;
+    height: 38px;
+    top: 290px;
+    right: 590px;
+   
+}
+.btn_store_detail a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 34px;
+    border-radius: 5px;
+    text-align: center;
+    color: #111;
+    border: 2px solid #111;;
 }

@@ -206,6 +206,8 @@ ul{
     width: 17.9%;
     left: 14.3%;
     top:36.7%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
    
 }
 .main_visual_slogan img{
@@ -223,6 +225,8 @@ ul{
     line-height: 2.5vw;
     font-size: 15px;
     font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s ease-out;
 }
 .slogan_btn a{
     max-width: 100%;
@@ -239,6 +243,8 @@ ul{
     top:13%;
     left: 35%;
     width: 12%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
    
 }
 .set_01 img{
@@ -250,6 +256,8 @@ ul{
     top: 22%;
     left: 63%;
     width: 12%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
    
     
 }
@@ -262,6 +270,8 @@ ul{
     top: 34%;
     left: 51%;
     width: 14%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
    
 }
 .set_03 img{
@@ -273,6 +283,8 @@ ul{
     top: 28%;
     left: 43%;
     width: 12%;
+    opacity: 0;
+    transition: all 0.3s ease-out;
    
 }
 .set_04 img{
@@ -284,7 +296,8 @@ ul{
     top: 15%;
     left: 71.5%;
     width: 11.6%;
-   
+    opacity: 0;
+    transition: all 0.3s ease-out;
 }
 
 .set_05 img{
@@ -561,6 +574,7 @@ ul{
     z-index: 21;
     top: 17.26%;
     left: 20%;
+    animation: bean_slide 1s linear;
 
 }
 .bean_img_box img {
@@ -574,6 +588,7 @@ ul{
     transform: translateY(-50%);
     width: calc(33% + 1px);
     right: 16.6%;
+    animation: bean_text_slide 1s linear;
 }
 .bean_txt_box img {
     vertical-align: top;
@@ -994,3 +1009,52 @@ ul{
 }
 
 
+@keyframes bean_slide{
+
+    from{
+        left:-500px;
+        opacity: 0;
+    }
+    to{
+        left:20%;
+        opacity: 1;
+    }
+
+}
+@keyframes bean_disappear{
+
+    from{
+        left:20%;
+        opacity: 1;
+    }
+    to{
+        left:-500px;
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes bean_text_slide{
+
+    from{
+        right:-500px;
+        opacity: 0;
+    }
+    to{
+        right:16.6%;
+        opacity: 1;
+    }
+}
+@keyframes bean_text_disappear{
+
+    from{
+        right:16.6%;
+        opacity: 1;
+    }
+    to{
+        right:-500px;
+        opacity: 0;
+    }
+
+}

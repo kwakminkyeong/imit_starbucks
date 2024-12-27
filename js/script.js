@@ -11,7 +11,6 @@ for(let i=0; i< menu.length; i++ ){
        fontA[i].setAttribute("style","color: #669900;");
        subWarp[i].setAttribute("style","display:block;  ");
        this.setAttribute("style","background-color:   #2C2A29;");
-      console.log(offsetWidth);
       
     });
 
@@ -42,16 +41,48 @@ for(let i=0; i< fontB.length; i++ ){
 
 //=========================================================음료 나타나기
 
-setInterval(function() {
-    let pan01 = document.querySelector(".pan01");  
-    let firstChild = pan01.querySelector("div:first-child");
 
-    // 좌측이동 ============================================================좌측으로 부드럽게 이동하기
-    pan01.setAttribute("style", "left: -586px; "); 
-},2000);
+ 
+    setInterval(function() {
+        // 클래스 이름 목록 정의
+        const classNames = [
+            "main_visual_slogan",
+            "set_01",
+            "set_02",
+            "set_03",
+            "set_04",
+            "set_05",
+            "slogan_btn"
+        ];
+        
+            // 각 클래스에 대해 반복
+        for (let i = 0; i < classNames.length; i++) {
+            const elements = document.getElementsByClassName(classNames[i]);
+                if (elements.length > 0) {
+                    // 요소의 스타일을 변경
+                    setTimeout(() => {
+                        elements[0].style.opacity = "1";
+                    }, i * 1000); // 각 요소마다 1초 간격
+                }
+        }
+}, 1000);
 
 
+let beanImg=document.getElementsByClassName(bean_img_box);
+let beanText=document.getElementsByClassName(bean_txt_box);
 
+window.addEventListener("scroll",function(){
+    let value=window.scrollY;
+    
+   
+    if(value>810){
+        beanImg[0].style.animation='bean_disappear 1s ease-out forwards';
+        beanTex[0].style.animation='bean_text_disappear 1s ease-out forwards';
+
+    }else{
+
+    }
+});
 
 
 

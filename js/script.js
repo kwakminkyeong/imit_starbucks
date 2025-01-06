@@ -68,20 +68,30 @@ for(let i=0; i< fontB.length; i++ ){
 }, 1000);
 
 
-let beanImg=document.getElementsByClassName(bean_img_box);
-let beanText=document.getElementsByClassName(bean_txt_box);
+let beanImg=document.getElementsByClassName("bean_img_box")[0];
+let beanText=document.getElementsByClassName("bean_txt_box")[0];
 
 window.addEventListener("scroll",function(){
-    let value=window.scrollY;
-    
+    let value = window.scrollY;
+    console.log("scroll", value);
    
-    if(value>810){
-        beanImg[0].style.animation='bean_disappear 1s ease-out forwards';
-        beanTex[0].style.animation='bean_text_disappear 1s ease-out forwards';
-
-    }else{
-
+    if(value< 810){
+        beanImg.setAttribute("style","left:-45%; opacity:0; transition:all 2s;");
+        beanText.setAttribute("style","right:-45%; opacity:0; transition:all 2s;");
+        
     }
+
+    else if (value>810){
+        beanImg.setAttribute("style","left:20%; opacity:1; transition:all 2s;");
+        beanText.setAttribute("style","right:20%; opacity:1; transition:all 2s;");
+    } 
+    else{
+        beanImg.setAttribute("style","left:-45%; opacity:0; transition:all 2s;");
+        beanText.setAttribute("style","right:-45%; opacity:0; transition:all 2s;");
+    }
+  
+    
+    
 });
 
 

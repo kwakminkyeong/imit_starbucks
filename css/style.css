@@ -574,7 +574,8 @@ ul{
     z-index: 21;
     top: 17.26%;
     left: 20%;
-    animation: bean_slide 1s linear;
+   
+   
 
 }
 .bean_img_box img {
@@ -588,7 +589,7 @@ ul{
     transform: translateY(-50%);
     width: calc(33% + 1px);
     right: 16.6%;
-    animation: bean_text_slide 1s linear;
+    /* animation: bean_text_slide 1s linear; */
 }
 .bean_txt_box img {
     vertical-align: top;
@@ -1009,7 +1010,7 @@ ul{
 }
 
 
-@keyframes bean_slide{
+/* @keyframes bean_slide{
 
     from{
         left:-500px;
@@ -1057,4 +1058,4 @@ ul{
         opacity: 0;
     }
 
-}
+} */

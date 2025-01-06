@@ -67,7 +67,7 @@ for(let i=0; i< fontB.length; i++ ){
         }
 }, 1000);
 
-
+//=========================================================커피빈 나타나기
 let beanImg=document.getElementsByClassName("bean_img_box")[0];
 let beanText=document.getElementsByClassName("bean_txt_box")[0];
 
@@ -85,17 +85,34 @@ window.addEventListener("scroll",function(){
         beanImg.setAttribute("style","left:20%; opacity:1; transition:all 2s;");
         beanText.setAttribute("style","right:20%; opacity:1; transition:all 2s;");
     } 
-    else{
-        beanImg.setAttribute("style","left:-45%; opacity:0; transition:all 2s;");
-        beanText.setAttribute("style","right:-45%; opacity:0; transition:all 2s;");
-    }
+
   
     
     
 });
 
 
+//=========================================================즐겨찾기 나타나기
 
+let favoTitle=document.getElementsByClassName("favo_title")[0];
+let favoText=document.getElementsByClassName("favo_text01")[0];
+let favoBtn=document.getElementsByClassName("btn_favo_detail")[0];
+
+window.addEventListener("scroll", function(){
+    let value = window.scrollY;
+
+    if (value< 2173){
+        favoTitle.setAttribute("style","margin-left:-200px; opacity:0; transition: all 2s;");
+        favoText.setAttribute("style","margin-left:-200px; opacity:0; transition: all 2s;");
+        favoBtn.setAttribute("style","opacity:0; transition: all 2s;");
+    }
+    else if(value > 1753){
+        favoTitle.setAttribute("style","left:387px; opacity:1; transition: all 2s;");
+        favoText.setAttribute("style","left:288px; opacity:1; transition: all 2s;");
+        favoBtn.setAttribute("style","opacity:1; transition: all 3s;");
+      
+    } 
+});
 
 
 
